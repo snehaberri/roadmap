@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Threadline</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+        <body>
+            <main class="popup-shell">
+<header class="topbar"><div class="brand"><span class="brand-mark">↗</span>threadline</div><button id="openDashboard" class="icon-button" aria-label="Open dashboard">↗</button></header>
+<section class="hero"><p class="eyebrow">CURRENT RESEARCH THREAD</p><div class="topic-row"><h1 id="currentTopic">Choose a topic</h1><button id="editTopic" class="text-button">Change</button></div><p id="status" class="status">Start a thread and read normally. We’ll keep the trail.</p></section>
+<section id="topicForm" class="topic-form"><label for="topicInput">What are you researching?</label><div class="input-row"><input id="topicInput" placeholder="e.g. Sustainable architecture" maxlength="80"><button id="saveTopic" class="primary-button">Start</button></div></section>
+<section id="pageCard" class="page-card hidden"><div class="page-card-top"><span class="capture-dot"></span>Watching this page</div><h2 id="pageTitle">Current page</h2><p id="pageUrl"></p><p class="page-hint">Save after 20 seconds of active reading.</p><button id="saveNow" class="secondary-button">Save to this thread</button></section>
+<section class="progress-section"><div class="section-heading"><span>Your trail</span><span id="itemCount">0 sources</span></div><div class="progress-track"><div id="progressFill" class="progress-fill"></div></div><p id="progressText">Your first source will become the starting point.</p></section>
+<section class="recent-section"><div class="section-heading"><span>Recently captured</span><button id="clearTopic" class="text-button subtle">Clear</button></div><div id="recentList" class="recent-list"><p class="empty-state">Nothing saved yet. Explore a page to begin.</p></div></section>
+</main><script src="popup.js"></script></body></html>
